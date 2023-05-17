@@ -7,6 +7,62 @@
         width: 50px;
         height: 50px;
     }
+
+
+
+    .dropdown-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      width: 200px;
+      text-align: left;
+    }
+
+    /* Style the dropdown content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 200px;
+      z-index: 1;
+      overflow-y: auto;
+      max-height: 200px;
+      border: 1px solid #ddd;
+    }
+
+    /* Style the search box */
+    .search-box {
+      padding: 8px 16px;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Style the list items */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Style the active dropdown button */
+    .dropdown-content a .active {
+      background-color: #3e8e41;
+    }
+
+    .s013 h4 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
   </style>
 
   <!-- ======= Hero Section ======= -->
@@ -14,20 +70,72 @@
     <div class="container position-relative">
       <div class="row gy-5" data-aos="fade-in">
 
-        <div class="col-lg-6 order-1 order-lg-2">
-            <img src="static/img/hero-1 (2).png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+          <img src="static/img/hero-1 (2).png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
           </div>
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-          <h2>Welcome to <span>Impact</span></h2>
-          <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+        <div class="col-lg-7 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+          <div class="s013 m-0 p-0">
+            <form>
+              <h4 class="mb-2">Where will your studies take you?</h4>
+              <p>Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
+  
+              <div class="inner-form">
+                <div class="left">
+                  
+                  <div class="input-wrap second py-0 my-0">
+                    <div class="input-field second">
+                      <label style="text-align: left;">Location</label>
+                      <div class="input-select">
+                        <select data-trigger="" name="choices-single-defaul">
+                          <option placeholder="">UK</option>
+                          <option>USA</option>
+                          <option>Austrailia</option>
+                          <option>Canada</option>
+                          <option>Germany</option>
+                          <option >France</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="input-wrap third py-0 my-0">
+                    <div class="input-field second">
+                      <label>Degree</label>
+                      <div class="input-select">
+                        <select data-trigger="" name="choices-single-defaul">
+                          <option placeholder="">Bachelor's</option>
+                          <option>Master's</option>
+                          <option>Doctorate/Phd Degrees</option>
+                          <option>Graduate Diploma</option>
+                          <option>Associate's Degree</option>
+                          <option>Foundation Program</option>
+
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="input-wrap first py-0 my-0">
+                    <div class="input-field first ">
+                      <label>Category</label>
+                      <input type="text" placeholder="Computer Engineering" />
+                    </div>
+                  </div>
+                </div>
+                <button class="btn-search" type="button">SEARCH</button>
+              </div>
+            </form>
           </div>
-        </div>
+
+        </div> 
+
+
+        
+        </div> 
         
       </div>
     </div>
+    
 
     <div class="icon-boxes position-relative">
       <div class="container position-relative">
@@ -410,7 +518,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Portfolio</h2>
+          <h2>Courses</h2>
           <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
         </div>
 
@@ -419,10 +527,10 @@
           <div>
             <ul class="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-product">Product</li>
-              <li data-filter=".filter-branding">Branding</li>
-              <li data-filter=".filter-books">Books</li>
+              <li data-filter=".filter-app">Bachelor's </li>
+              <li data-filter=".filter-product">Master's</li>
+              <li data-filter=".filter-branding">PhD</li>
+              <li data-filter=".filter-books">Diploma</li>
             </ul><!-- End Portfolio Filters -->
           </div>
 
@@ -430,9 +538,9 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <a href="static/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/portfolio/app-1.jpg" class="img-fluid" alt=""></a>
+                <a href="static/img/course/physics.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/course/physics.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 1</a></h4>
+                  <h4><a href="portfolio-details.html" title="More Details">Bachelor's Degree in Physics</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -440,9 +548,9 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
-                <a href="static/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/portfolio/product-1.jpg" class="img-fluid" alt=""></a>
+                <a href="static/img/course/Economics.png" data-gallery="portfolio-gallery-app" class="glightbox"><img src=" static/img/course/Economics.png" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 1</a></h4>
+                  <h4><a href="portfolio-details.html" title="More Details">Master's Degree in Economics</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -450,9 +558,10 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
               <div class="portfolio-wrap">
-                <a href="static/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/portfolio/branding-1.jpg" class="img-fluid" alt=""></a>
+                <a href="static/img/course/accounting-finance.webp" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/course/accounting-finance.webp" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 1</a></h4>
+                  <h4><a href="portfolio-details.html" title="More Details">PhD Accounting and Finance
+                  </a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -460,9 +569,10 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
-                <a href="static/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/portfolio/books-1.jpg" class="img-fluid" alt=""></a>
+                <a href=" static/img/course/economics-management.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src=" static/img/course/economics-management.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 1</a></h4>
+                  <h4><a href="portfolio-details.html" title="More Details">Foundation in Economics and Management
+                  </a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -470,9 +580,9 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <a href="static/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/portfolio/app-2.jpg" class="img-fluid" alt=""></a>
+                <a href=" static/img/course/computers.webp" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/course/computers.webp" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 2</a></h4>
+                  <h4><a href="portfolio-details.html" title="More Details">Bachelor's in Computer Science</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -480,9 +590,9 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
-                <a href="static/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/portfolio/product-2.jpg" class="img-fluid" alt=""></a>
+                <a href=" static/img/course/microbiology.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src=" static/img/course/microbiology.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 2</a></h4>
+                  <h4><a href="portfolio-details.html" title="More Details">Master's in Microbiology</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -490,9 +600,10 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
               <div class="portfolio-wrap">
-                <a href="static/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/portfolio/branding-2.jpg" class="img-fluid" alt=""></a>
+                <a href=" static/img/course/radiography.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src=" static/img/course/radiography.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 2</a></h4>
+                  <h4><a href="portfolio-details.html" title="More Details">PhD/MPhil Radiography
+                  </a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -500,9 +611,10 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
-                <a href="static/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/portfolio/books-2.jpg" class="img-fluid" alt=""></a>
+                <a href=" static/img/course/law.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src=" static/img/course/law.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 2</a></h4>
+                  <h4><a href="portfolio-details.html" title="More Details">Graduate Diploma in Law GDL
+                  </a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -510,9 +622,9 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <a href="static/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/portfolio/app-3.jpg" class="img-fluid" alt=""></a>
+                <a href=" static/img/course/graphic-designe.webp" data-gallery="portfolio-gallery-app" class="glightbox"><img src=" static/img/course/graphic-designe.webp" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 3</a></h4>
+                  <h4><a href="portfolio-details.html" title="More Details">BA in Graphics Design</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -520,9 +632,9 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
-                <a href="static/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/portfolio/product-3.jpg" class="img-fluid" alt=""></a>
+                <a href=" static/img/course/english.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src=" static/img/course/english.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 3</a></h4>
+                  <h4><a href="portfolio-details.html" title="More Details">Master's Degree in Communication</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -530,9 +642,10 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
               <div class="portfolio-wrap">
-                <a href="static/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/portfolio/branding-3.jpg" class="img-fluid" alt=""></a>
+                <a href="static/img/course/business.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/course/business.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 3</a></h4>
+                  <h4><a href="portfolio-details.html" title="More Details">Ph.D Business and Management
+                  </a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -540,9 +653,10 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
-                <a href="static/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/portfolio/books-3.jpg" class="img-fluid" alt=""></a>
+                <a href="static/img/course/computing.png" data-gallery="portfolio-gallery-app" class="glightbox"><img src="static/img/course/computing.png" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 3</a></h4>
+                  <h4><a href="portfolio-details.html" title="More Details">Graduate Diploma in Computing
+                  </a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -570,13 +684,8 @@
             <div class="member">
               <img src="static/img/team/team-1.jpg" class="img-fluid" alt="">
               <h4>Walter White</h4>
-              <span>Web Development</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              <span>English</span>
+            
             </div>
           </div><!-- End Team Member -->
 
@@ -584,13 +693,8 @@
             <div class="member">
               <img src="static/img/team/team-2.jpg" class="img-fluid" alt="">
               <h4>Sarah Jhinson</h4>
-              <span>Marketing</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              <span>Computer's</span>
+            
             </div>
           </div><!-- End Team Member -->
 
@@ -598,13 +702,8 @@
             <div class="member">
               <img src="static/img/team/team-3.jpg" class="img-fluid" alt="">
               <h4>William Anderson</h4>
-              <span>Content</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              <span>Physics</span>
+             
             </div>
           </div><!-- End Team Member -->
 
@@ -612,13 +711,8 @@
             <div class="member">
               <img src="static/img/team/team-4.jpg" class="img-fluid" alt="">
               <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              <span>Economics</span>
+             
             </div>
           </div><!-- End Team Member -->
 
@@ -895,7 +989,7 @@
     <!-- End Recent Blog Posts Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <!-- <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -914,7 +1008,7 @@
                   <h4>Location:</h4>
                   <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>End Info Item 
 
               <div class="info-item d-flex">
                 <i class="bi bi-envelope flex-shrink-0"></i>
@@ -922,7 +1016,7 @@
                   <h4>Email:</h4>
                   <p>info@example.com</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>  End Info Item  
 
               <div class="info-item d-flex">
                 <i class="bi bi-phone flex-shrink-0"></i>
@@ -930,7 +1024,7 @@
                   <h4>Call:</h4>
                   <p>+1 5589 55488 55</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div> End Info Item 
 
               <div class="info-item d-flex">
                 <i class="bi bi-clock flex-shrink-0"></i>
@@ -938,7 +1032,7 @@
                   <h4>Open Hours:</h4>
                   <p>Mon-Sat: 11AM - 23PM</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div> End Info Item
             </div>
 
           </div>
@@ -966,13 +1060,48 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>End Contact Form 
 
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section> End Contact Section -->
 
   </main><!-- End #main -->
+
+
+  <script>
+        function toggleDropdown() {
+      var dropdownContent = document.querySelector(".dropdown-content");
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        document.querySelector(".dropdown-btn").classList.remove("active");
+      } else {
+        dropdownContent.style.display = "block";
+        document.querySelector(".dropdown-btn").classList.add("active");
+      }
+    }
+
+    function filterOptions() {
+      var input = document.querySelector(".search-box");
+      var filter = input.value.toUpperCase();
+      var options = document.querySelectorAll(".dropdown-content a");
+      for (var i = 0; i < options.length; i++) {
+        if (options[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+          options[i].style.display = "";
+        } else {
+          options[i].style.display = "none";
+        }
+      }
+    }
+
+
+
+    const choices = new Choices('[data-trigger]',
+      {
+        searchEnabled: false,
+        itemSelectText: '',
+      });
+  </script>
 
   {% endblock %}
